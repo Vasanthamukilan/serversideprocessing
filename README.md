@@ -26,7 +26,7 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ## File: index.html
-```
+```html
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -66,7 +66,7 @@ Publish the website in the given URL.
 </html>
 ```
 ## File: index.css
-```
+```css
 * {
     margin: 0%;
     font-family: monospace;
@@ -129,7 +129,7 @@ button{
 }
 ```
 ## File: views.py
-```
+```python
 from django.shortcuts import render
 # Create your views here.
 
@@ -156,7 +156,7 @@ def index(request):
     return render(request,"index.html")
 ```
 ## File:Urls.py
-```
+```python
 from django.contrib import admin
 from django.urls import path
 from calculator import views
